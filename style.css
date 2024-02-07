@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: freePixel;
+    src: url("fuentes/FreePixel.ttf");
+}
+
+@font-face {
+    font-family: pixCon;
+    src: url("fuentes/PixCon.ttf");
+}
+
+@font-face {
+    font-family: vcr;
+    src: url("fuentes/VCR_OSD_MONO_1.001.ttf");
+}
+
+@font-face {
+    font-family: digitalDisco;
+    src: url("fuentes/DigitalDisco-Thin.ttf");
+}
+
+@font-face {
+    font-family: binchrt;
+    src: url("fuentes/binchrt.ttf");
+}
+
+@font-face {
+    font-family: digitalDiscoNegrita;
+    src: url("fuentes/DigitalDisco.ttf");
+}
+
+@font-face {
+    font-family: videotype;
+    src: url("fuentes/videotype.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9dff7;
+    background-image: url(recursos/lineas_pequenas_fondo.png),
+                      url(recursos/lineas_pequenas_inversas_fondo.png);
+    background-position-x: left, right;
+    background-position-y: center, center;
+    background-repeat: repeat-y, repeat-y;
+    color: #1f1c1c;
+    padding: 10px;
+}
+
+header {
+    margin: 3vh 0px 10px 0px ;
+/*     border: 5px solid black; */
+}
+
+.tituloCentrado {
+    display: grid;
+    margin: 0px;
+    /*margin: 10vh 10px 5vh 10px;*/
+}
+
+.tituloMenorCentrado {
+    display: grid;
+}
+
+.navInstrucciones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    margin: 30px 10px;
+    /*border: 5px solid black;*/
+}
+
+.navInstrucciones ul {
+    font-family: videotype;
+}
+
+.navInstrucciones ul li {
+    margin: 3px 3px 3px 15px;
+}
+
+.navInstrucciones ul li::before {
+    content: "> ";
+}
+
+.instrucciones {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    color: #2A2A2A;
+    background-color: #f5ebe5;
+    border-radius: 20px / 20px;
+    border: 3px solid #2A2A2A;
+    box-shadow: 3px 7px rgba(213, 10, 220, .5);
+}
+
+.instrucciones p {
+    font-family: pixCon;
+    word-break: break-all;
+    margin: 5px;
+}
+
+.instrucciones h2 {
+    margin: 0px;
+}
+
+nav {
+    margin: 20px 10px;
+    width: 90%;
+    height: fit-content;
+    border: 2px solid #1f1c1c;
+    border-radius: 40px / 35px;
+    order: 2;
+    box-shadow: 3px 7px rgba(213, 10, 220, .5);
+    text-shadow: 3px 7px rgba(213, 10, 220, .5);
+    background-color: transparent;
+}
+
+nav h2 {
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+    bottom: 20px;
+    right: 0px;
+    background-color: #e9dff7;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.modos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
+.modos button {
+    box-shadow: 3px 7px rgba(213, 10, 220, .5);
+    margin: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: freePixel;
+    text-align: center;
+    padding: 10px;
+    word-break: break-all;
+    border-bottom: solid 5px #6bdebc;
+    display: inline;
+    margin: auto;
+}
+
+h2 {
+    font-family: digitalDisco;
+    font-size: 30px;
+}
+
+.verde {
+    color: #00ffb7;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    padding-top: 10px;
+    margin: 10px 10px 20px 10px;
+/*     border: 5px solid black; */
+}
+
+.consola {
+    background-color: #fefefe;
+    color: #1f1c1c;
+    border: 5px solid #4a4a37;
+    padding: 10px;
+}
+
+.consola:nth-of-type(1) {
+    flex: 1 1 350px;
+    width: 90%;
+    margin: 10px;
+    height: 70%;
+    box-shadow: 3px 7px rgba(213, 10, 220, .5);
+}
+
+.consola h3 {
+    font-family: freePixel;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 0px;
+}
+
+#encriptador {
+    font-size: 20px;
+    font-family: digitalDiscoNegrita;
+    height: 40vh;
+    width: 90%;
+    margin: 0px;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fefefe;
+    color: #1f1c1c;
+}
+
+#consola_imagen {
+    flex: 1 1 350px;
+    width: 90%;
+    display: flex;
+    flex-flow: wrap column;
+    margin: 10px;
+}
+
+#consola_imagen .consola {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    position: relative;
+    bottom: 15px;
+    box-shadow: 3px 7px rgba(213, 10, 220, .5);
+}
+
+#consola_imagen img {
+    position: relative;
+    margin: 0px 0px;
+    align-self: center;
+    filter: drop-shadow(pink 2px 5px);
+}
+
+#encriptado {
+    font-family: digitalDiscoNegrita;
+    font-size: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    word-break: break-all;
+}
+
+button {
+    font-family: pixCon;
+    font-size: 10px;
+    margin: 0px 2px 2px 2px;
+    padding: 5px;
+    background-color: #009872;
+    color: black;
+    border: ridge 3px #3f3f3f;
+    border-radius: 10px / 10px;
+    word-break: break-all;
+    width: auto;
+}
+
+button:hover {
+    background: rgb(0,120,91);
+    background: radial-gradient(circle, rgba(0,120,91,1) 30%, rgba(0,255,183,1) 100%);
+    color: #d7d7dd;
+    border: ridge 3px #3f3f3f;
+}
+
+.contenedorBoton {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.activo {
+    background: rgb(0,255,183);
+    background: radial-gradient(circle, rgba(0,255,183,1) 10%, rgba(0,87,67,1) 70%);
+    color: ghostwhite;
+}
+
+.copiar {
+    align-self: end;
+}
+
+.verde {
+    color: #00ffb7;
+}
+
+a {
+    color: #00b300;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00c100;
+}
+
+
+@media (min-width: 800px) {
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    h1::before {
+        content: "";
+        position: absolute;
+        border: 3px solid #6bdebc;
+        width: 10px;
+        height: 10px;
+        margin: 55px 10px 10px -23px;
+    }
+
+    h1::after {
+        content: "";
+        position: absolute;
+        border: 3px solid #6bdebc;
+        width: 10px;
+        height: 10px;
+        margin: 55px 10px 10px 10px;
+    }
+
+    .navInstrucciones {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .instrucciones {
+        width: 40%;
+        flex: 1 1 350px;
+    }
+
+    nav {
+        width: 40%;
+        flex: 1 1 350px;
+    }
+
+    .modos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tituloCentrado {
+        width: 100%;
+        margin: auto;
+    }
+
+    main {
+        flex-flow: row wrap;
+    }
+
+    .consola:nth-of-type(1) {
+        flex: 1 1 350px;
+        width: 40%;
+    }
+
+    #consola_imagen {
+        flex: 1 1 350px;
+        width: 40%;
+    }
+
+    #consola_imagen img {
+        position: relative;
+        margin: 0px 30px;
+        align-self: flex-end;
+        filter: drop-shadow(pink 2px 5px);
+    }
+
+}

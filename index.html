@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <html lang="es-mx">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Desafío encriptador</title>
+	<link rel="shortcut icon" type="image/ico" href="recursos/favicon.ico"/>
+</head>
+
+<body>
+
+	<header>
+
+		<div class="tituloCentrado">
+
+			<h1>Encriptador de texto</h1>
+
+		</div>
+
+		<div class="navInstrucciones">
+
+			<nav>
+
+				<div class="tituloMenorCentrado">
+
+					<h2>Seleccionar modo:</h2>
+
+				</div>
+
+				<div class="modos">
+
+					<button id="encriptar">Encriptar/Cifrar</button>
+
+					<button id="desencriptar">Desencriptar/Descifrar</button>
+
+				</div>
+
+			</nav>
+
+			<div class="instrucciones">
+
+                <h2>Bienvenido al cifrador de texto</h2>
+
+                <p>Instrucciones:</p>
+
+				<ul>
+					<li>Primero selecciona el modo que quieres usar:
+                        <ul>
+                            <li>Cifrar para encriptar un texto(este se encriptará a medida que lo escribas).</li>
+                            <li>Descifrar para desencriptar un mensaje con el que ya cuentes o tu mism@ hayas cifrado</li>
+                        </ul>
+					</li>
+					<li>El texto se escribe en "la consola de entrada" y lo que cifres/descifres saldrá en la "consola de salida"</li>
+					<li>Puedes usar el botón de copiar para copiar el mensaje que hayas cifrado/descifrado</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<main>
+
+		<div class="consola">
+
+			<h3>&nbsp;&nbsp;<span class="verde">&gt;</span> Consola de entrada:</h3>
+
+			<div class="contenedor">
+
+				<textarea id="encriptador"
+					placeholder="Seleccione modo antes de ingresar texto a esta área."></textarea>
+
+			</div>
+
+		</div>
+
+		<div id="consola_imagen">
+
+			<img src="recursos/robot_pequeno_fondo.png"
+				width="200"
+				height="218"
+				alt="La silueta en blanco de un pequeño robot con una sombra rosa">
+
+			<div class="consola">
+
+				<h3>&nbsp;&nbsp;<span class="verde">&gt;</span> Consola de salida:</h3>
+
+				<p id="encriptado"></p>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+
+		<script src="script.js"></script>
+
+	</footer>
+</body>
+
+</html>
