@@ -373,6 +373,9 @@ a:hover {
     .navInstrucciones {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
     .instrucciones {
@@ -383,6 +386,7 @@ a:hover {
     nav {
         width: 40%;
         flex: 1 1 350px;
+        align-self: end;
     }
 
     .modos {
