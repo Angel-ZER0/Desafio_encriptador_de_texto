@@ -82,6 +82,11 @@ table {
     src: url("fuentes/videotype.ttf");
 }
 
+@font-face {
+    font-family: Acme_9_Regular;
+    src: url(fuentes/Acme_9_Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -145,7 +150,7 @@ header {
 }
 
 .instrucciones p {
-    font-family: pixCon;
+    font-family: Acme_9_Regular;
     word-break: break-all;
     margin: 5px;
 }
@@ -218,6 +223,40 @@ main {
     padding-top: 10px;
     margin: 10px 10px 20px 10px;
 /*     border: 5px solid black; */
+}
+
+.advertencia {
+    font-family: Acme_9_Regular;
+    width: auto;
+    text-align: center;
+    color: #001989;
+    font-size: 12px;
+    background-color: ghostwhite;
+    word-break: keep-all;
+    padding: 3px;
+}
+
+.exclamacion {
+    display: inline-block;
+    border : 2px solid #001989;
+    background-color: #001989;
+    border-radius: 20px/20px;
+    color: ghostwhite;
+    width: 19px;
+    height: 19px;
+    font-weight: bold;
+}
+
+.azul {
+    font-family: digitalDiscoNegrita;
+    font-size: 18px;
+    border : 2px solid #001989;
+    background-color: #001989;
+    border-radius: 5px/5px;
+    color: ghostwhite;
+    font-weight: bold;
+    display: inline-block;
+    margin: 3px;
 }
 
 .consola {
