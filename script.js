@@ -232,7 +232,10 @@ MODOS.addEventListener("click", () => {
         CONSOLA_ENTRADA.appendChild(CONTENEDOR_BOTON_1);
         /*añade un eventListener al botón BOTON_DESENCRIPTAR de tipo click que llama
         la función para desencriptar el texto escrito en ENCRIPTADOR*/
-        BOTON_DESENCRIPTAR.addEventListener("click", reemplazarCifrados);
+        BOTON_DESENCRIPTAR.addEventListener("click", () => {
+            verifivadorCaracteres();
+            reemplazarCifrados();
+        });
         //añade un eventListener de tipo keyup al elemento encriptador
         ENCRIPTADOR.addEventListener("keyup", verifivadorCaracteres);
         //Condicinal que elimina el contenedor del botón copiar en caso de tenerlo
