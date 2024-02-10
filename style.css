@@ -291,7 +291,7 @@ main {
 #encriptador {
     font-size: 20px;
     font-family: digitalDiscoNegrita;
-    height: 40vh;
+    min-height: 40vh;
     width: 90%;
     margin: 0px;
     border: none;
