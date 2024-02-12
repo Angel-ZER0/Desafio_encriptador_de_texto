@@ -99,7 +99,6 @@ body {
     background-position-y: center, center;
     background-repeat: repeat-y, repeat-y;
     color: #1f1c1c;
-    padding: 10px;
 }
 
 header {
@@ -291,7 +290,7 @@ main {
 #encriptador {
     font-size: 20px;
     font-family: digitalDiscoNegrita;
-    min-height: 40vh;
+    min-height: 35vh;
     width: 90%;
     margin: 0px;
     border: none;
@@ -383,6 +382,21 @@ a:hover {
     color: #00c100;
 }
 
+footer {
+    font-family: freePixel;
+    font-size: 20px;
+    background-color: rgba(245, 235, 229, .80);
+    border: dotted 10px pink;
+    border-style: dotted dotted none dotted;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+}
 
 @media screen and (min-width: 800px) {
 
